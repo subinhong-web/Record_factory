@@ -1,10 +1,57 @@
+/* 폰트 */
+/* 메인 RECORD 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Aboreto&display=swap');
+.abhaya-libre-bold {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  /* 메인 p 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+.aboreto-regular {
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* 01 숫자 */
+  @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Aboreto&family=Abril+Fatface&family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@300&display=swap');
+  .abril-fatface-regular {
+    font-family: "Abril Fatface", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  /* 01 숫자 아래 폰트 */
+  @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Aboreto&family=Abril+Fatface&family=Nanum+Myeongjo&display=swap');
+  .abhaya-libre-regular {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* Noto Kr 폰트 */
+  @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Aboreto&family=Abril+Fatface&family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@300&display=swap');
+  .noto-sans-kr {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+/* 폰트 */
+
 /* 헤더 시작 */
 
-header {
-    background: url(../img/첫페이지\ 메인\ 사진.png);
+.main_section {
+    background: url(../img/main_.png);
     background-size: cover;
     width: 100%;
-    height: 1080px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .web_header {
@@ -12,8 +59,8 @@ header {
 }
 
 .header_top > h1 > img {
-    width: 80px;
-    height: 30px;
+    width: 88px;
+    height: 32px;
     cursor: pointer;
 }
 
@@ -25,6 +72,7 @@ header {
 .header_top {
     display: flex;
     justify-content: space-between;
+    padding: 32px;
 }
 
 .header_top > ul > li > a {
@@ -32,11 +80,25 @@ header {
     color: #fff;
 }
 
-.heder_text {
+.main_text {
+    color: #fff;
+    padding-left: 80px;
+    height: 80%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
+
+.main_text > h2 {
+    font-size: 56px;
+    font-family: "Abhaya Libre", serif;
+}
+
+.main_text > div {
+    font-size: 24px;
+    font-family: "Aboreto", system-ui;
+}
+
 
 /* 모바일 헤더 시작 */
 .mo_header {
@@ -49,6 +111,50 @@ header {
 
 /* 메인 시작 */
 
+.main_page {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.main_top_text {
+    position: relative;
+}
+
+.main_top_text > p {
+    font-size: 200px;
+    font-weight: 600;
+    color: rgba(97, 95, 95, 0.13);
+    font-family: "Abril Fatface", serif;
+}
+
+.main_top_text > h2 {
+    font-size: 56px;
+    color: rgba(213, 178, 167, 1);
+    font-family: "Abhaya Libre", serif;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.main_center_box {
+    display: flex;
+    gap: 130px;
+}
+
+.main_top_text_2 {
+
+}
+
+.main_top_text_2 > h3 {
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 32px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.main_top_text_2 > p {
+    font-size: 24px;
+}
 
 
 /* 메인 끝 */
