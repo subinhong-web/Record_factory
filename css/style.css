@@ -1,44 +1,49 @@
 /* 폰트 */
 /* 메인 RECORD 폰트 */
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Aboreto&display=swap');
+
 .abhaya-libre-bold {
     font-family: "Abhaya Libre", serif;
     font-weight: 700;
     font-style: normal;
-  }
+}
 
-  /* 메인 p 폰트 */
+/* 메인 p 폰트 */
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
 .aboreto-regular {
     font-family: "Aboreto", system-ui;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-  /* 01 숫자 */
-  @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Aboreto&family=Abril+Fatface&family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@300&display=swap');
-  .abril-fatface-regular {
+/* 01 숫자 */
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Aboreto&family=Abril+Fatface&family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@300&display=swap');
+
+.abril-fatface-regular {
     font-family: "Abril Fatface", serif;
     font-weight: 800;
     font-style: normal;
-  }
+}
 
-  /* 01 숫자 아래 폰트 */
-  @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Aboreto&family=Abril+Fatface&family=Nanum+Myeongjo&display=swap');
-  .abhaya-libre-regular {
+/* 01 숫자 아래 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Aboreto&family=Abril+Fatface&family=Nanum+Myeongjo&display=swap');
+
+.abhaya-libre-regular {
     font-family: "Abhaya Libre", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-  /* Noto Kr 폰트 */
-  @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Aboreto&family=Abril+Fatface&family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@300&display=swap');
-  .noto-sans-kr {
+/* Noto Kr 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Aboreto&family=Abril+Fatface&family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@300&display=swap');
+
+.noto-sans-kr {
     font-family: "Noto Sans KR", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-  }
+}
 
 /* 폰트 */
 
@@ -105,8 +110,80 @@
     display: none;
 }
 
-/* 모바일 헤더 끝 */
+@media screen and (max-width: 768px) {
+    .web_header {
+        display: none;
+    }
 
+    .mo_header {
+        display: block;
+        position: relative;
+        background-color: #0d0d0d;
+        padding: 16px;
+    }
+
+    .mo_button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mo_button > figure > img {
+        width: 88px;
+        height: 32px;
+    }
+
+    .mo_button > button {
+        width: 32px;
+        height: 24px;
+        background: none;
+        border: none;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .mo_button > button::before,
+    .mo_button > button::after,
+    .mo_button > button > div {
+        content: "";
+        display: block;
+        background-color: rgba(11, 10, 8, 1);
+        height: 3px;
+        width: 100%;
+        margin: 5px 0;
+        transition: 0.3s;
+    }
+
+    /* 메뉴 */
+
+    .mo_menu {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(11, 10, 8, 1);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 10;
+    }
+
+    .mo_menu > a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 16px 0;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+
+    .mo_menu.active {
+        display: flex;
+    }
+}
+
+/* 모바일 헤더 끝 */
 /* 헤더 끝 */
 
 /* 메인 시작 */
@@ -141,9 +218,7 @@
     gap: 130px;
 }
 
-.main_top_text_2 {
-
-}
+.main_top_text_2 {}
 
 .main_top_text_2 > h3 {
     font-weight: 700;
@@ -156,5 +231,167 @@
     font-size: 24px;
 }
 
+/* 슬라이드 시작 */
 
-/* 메인 끝 */
+.main_slide {
+    background-color: rgba(242, 233, 226, 1);
+    padding: 80px 0;
+}
+
+.slide {
+    width: 1400px;
+    margin: 0 auto 80px auto;
+}
+
+.slide_box {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.slide_box > figure > img {
+    width: 500px;
+    border-radius: 12px;
+}
+
+.slide_text > h3 {
+    color: rgba(103, 77, 62, 1);
+    font-size: 28px;
+    font-family: "Noto Sans KR", sans-serif;
+    margin-bottom: 16px;
+}
+
+.slide_text > strong {
+    display: block;
+    font-size: 18px;
+    margin-top: 12px;
+    font-weight: bold;
+    color: rgba(103, 77, 62, 1);
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.slide_text > p {
+    font-size: 16px;
+    color: rgba(103, 77, 62, 1);
+    line-height: 1.6;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 오디션 스티키 시작 */
+
+.main_audition {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.main_audition > figure {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main_audition > figure > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.main_audition figure img.active {
+    opacity: 1;
+}
+
+.main_audition > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 60px;
+    gap: 100px;
+}
+
+.audition_text > h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: "Abhaya Libre", serif;
+    color: rgba(130, 100, 85, 1);
+}
+
+.audition_text > p {
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: "Noto Sans KR", sans-serif;
+    color: rgba(130, 100, 85, 1);
+}
+
+.main_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 80px;
+    background-color: #ffffff;
+}
+
+.main_bottom > div {
+    max-width: 60%;
+}
+
+.main_bottom > div > h2 {
+    font-size: 32px;
+    font-family: "Abhaya Libre", serif;
+    margin-bottom: 32px;
+    color: rgba(103, 77, 62, 1);
+}
+
+.main_bottom > div > p {
+    font-size: 18px;
+    font-family: "Noto Sans KR", sans-serif;
+    color: rgba(103, 77, 62, 1);
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.main_bottom button {
+    background-color: #d5b2a7;
+    color: #fff;
+    padding: 14px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.main_bottom > figure > img {
+    max-width: 400px;
+    border-radius: 16px;
+}
+
+/* 푸터 */
+
+footer {
+    background-color: rgba(11, 10, 8, 1);
+    color: rgba(213, 178, 167, 1);
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > div > p {
+    font-size: 14px;
+    margin: 4px 0;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+footer > figure > img {
+    width: 80px;
+}
+
+/* 푸터 끝 */
