@@ -1,0 +1,41 @@
+.sticky_container {
+    display: flex;
+}
+
+.sticky-image {
+    position: sticky;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sticky-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.sticky-image img.active {
+    opacity: 1;
+}
+
+.sticky_content_container {
+    width: 50%;
+    padding: 100vh 5vw;
+}
+
+.sticky_content_section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+.sticky_content_section:nth-child(even) {
+    background-color: #f9f9f9;
+}

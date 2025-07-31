@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Interaction</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: 'Pretendard', sans-serif;
+        }
+
+        .sticky_container {
+            display: flex;
+        }
+
+        .sticky-image {
+            position: sticky;
+            top: 0;
+            width: 50%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .sticky-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+        }
+
+        .sticky-image img.active {
+            opacity: 1;
+        }
+
+        .sticky_content_container {
+            width: 50%;
+            padding: 100vh 5vw;
+        }
+
+        .sticky_content_section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .sticky_content_section:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="sticky_container">
+        <!-- 왼쪽 이미지 영역 -->
+        <div class="sticky-image">
+            <img src="../img/1번 스티키.png" class="active" data-index="0" />
+            <img src="../img/2번 스티키.png" data-index="1" />
+            <img src="../img/3번 스티키.png" data-index="2" />
+            <img src="../img/4번 스티키.png" data-index="3" />
+        </div>
+
+        <!-- 오른쪽 콘텐츠 영역 -->
+        <div class="sticky_content_container">
+            <div class="sticky_content_section" data-index="0">🎵 콘텐츠 1: 음악 아카데미 소개</div>
+            <div class="sticky_content_section" data-index="1">🎧 콘텐츠 2: 사운드 엔지니어 과정</div>
+            <div class="sticky_content_section" data-index="2">🎤 콘텐츠 3: 보컬 및 퍼포먼스</div>
+            <div class="sticky_content_section" data-index="3">📅 콘텐츠 4: 오디션 일정 안내</div>
+        </div>
+    </div>
+
+    <script>
+        const sections = document.querySelectorAll('.sticky_content_section');
+        const images = document.querySelectorAll('.sticky-image img');
+
+        window.addEventListener('scroll', () => {
+            let currentIndex = 0;
+
+            sections.forEach((section, index) => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight / 2) {
+                    currentIndex = index;
+                }
+            });
+
+            images.forEach((img) => {
+                img.classList.remove('active');
+                if (parseInt(img.dataset.index) === currentIndex) {
+                    img.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

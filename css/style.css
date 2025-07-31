@@ -8,6 +8,10 @@
     font-style: normal;
 }
 
+body {
+    font-family: "Abhaya Libre", serif;
+}
+
 /* 메인 p 폰트 */
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 
@@ -189,12 +193,25 @@
 /* 메인 시작 */
 
 .main_page {
-    width: 1400px;
+    width: 1200px;
     margin: 0 auto;
 }
 
+.main_page > article {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .main_top_text {
+    width: 100%;
     position: relative;
+}
+
+.main_top_text.right {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .main_top_text > p {
@@ -205,7 +222,7 @@
 }
 
 .main_top_text > h2 {
-    font-size: 56px;
+    font-size: 72px;
     color: rgba(213, 178, 167, 1);
     font-family: "Abhaya Libre", serif;
     position: absolute;
@@ -215,23 +232,24 @@
 
 .main_center_box {
     display: flex;
-    gap: 130px;
-}
-
-.main_top_text_2 {
-    
+    align-items: center;
+    gap: 200px;
+    margin-top: 50px;
 }
 
 .main_top_text_2 > h3 {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 32px;
     padding-bottom: 32px;
     font-family: "Noto Sans KR", sans-serif;
 }
 
 .main_top_text_2 > p {
     font-size: 24px;
+    line-height: 42px;
 }
+
+/* 메인 끝 */
 
 /* 슬라이드 시작 */
 
@@ -243,6 +261,15 @@
 .slide {
     width: 1400px;
     margin: 0 auto 80px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide > h2 {
+    color: rgba(103, 77, 62, 1);
+    font-size: 52px;
+    text-align: center;
+    padding: 80px;
 }
 
 .slide_box {
@@ -278,6 +305,8 @@
     line-height: 1.6;
     font-family: "Noto Sans KR", sans-serif;
 }
+
+/* 슬라이드 끝 */
 
 /* 오디션 스티키 시작 */
 
@@ -332,12 +361,18 @@
     color: rgba(130, 100, 85, 1);
 }
 
+/* 오디션 스티키 끝 */
+
+/* 메인 하단 시작 */
+
 .main_bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 100px 80px;
     background-color: #ffffff;
+    height: 1080px;
+    text-align: left;
 }
 
 .main_bottom > div {
@@ -359,7 +394,7 @@
     line-height: 1.6;
 }
 
-.main_bottom button {
+.main_bottom > div > button {
     background-color: #d5b2a7;
     color: #fff;
     padding: 14px 32px;
@@ -371,9 +406,11 @@
 }
 
 .main_bottom > figure > img {
-    max-width: 400px;
-    border-radius: 16px;
+    width: 100%;
+    height: 100vh;
 }
+
+/* 메인 하단 끝 */
 
 /* 푸터 */
 
@@ -393,7 +430,7 @@ footer > div > p {
 }
 
 footer > figure > img {
-    width: 80px;
+    width: 100px;
 }
 
 /* 푸터 끝 */

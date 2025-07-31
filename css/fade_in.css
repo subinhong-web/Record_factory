@@ -1,0 +1,37 @@
+.to_top {
+    transform: translateY(-200px)
+}
+
+.to_bottom {
+    transform: translateY(200px);
+}
+
+.to_left {
+    transform: translateX(-200px);
+}
+
+.to_right {
+    transform: translateX(200px);
+}
+
+.to_right_bottom {
+    transform: translate(200px,200px);
+}
+
+.to_left_bottom {
+    transform: translate(-200px,200px);
+}
+
+.fade {
+    opacity: 0;
+    transition: 1s;
+}
+
+.in {
+    transform: none;
+    opacity: 1;
+}
+
+.box {
+    display: flex;
+}
