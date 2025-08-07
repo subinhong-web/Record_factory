@@ -358,7 +358,7 @@ body {
     line-height: 1.4;
 }
 
-.nav-button {
+.main_page > button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -370,16 +370,8 @@ body {
     z-index: 10;
 }
 
-.nav-button:hover {
+.main_page > button:hover {
     color: #000;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
 }
 
 .dots {
@@ -403,17 +395,17 @@ body {
 }
 
 @media (max-width: 768px) {
-    .carousel-slide {
+    .sound_engineer {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .carousel-slide img {
+    .slide_box > figure > img {
         width: 100%;
         margin-bottom: 15px;
     }
 
-    .carousel-content {
+    .slide_box {
         width: 100%;
         padding: 0;
     }
