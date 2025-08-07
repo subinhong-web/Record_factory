@@ -91,6 +91,7 @@
 
     <main>
         <section class="main_page">
+            <button class="nav-button prev">&#10094;</button>
             <article class="sound_engineer">
                 <div class="main_top_text fade_content fade to_bottom">
                     <p>
@@ -211,6 +212,7 @@
                     </figure>
                 </div>
             </article>
+            <button class="nav-button prev">&#10094;</button>
         </section>
 
         <section class="main_slide">
@@ -365,7 +367,7 @@
                         <figure>
                             <img src="./img/04_slide.png" alt="음향처리">
                         </figure>
-                        
+
                         <div class="slide_text">
                             <h3>
                                 Recording equipment and
@@ -401,95 +403,96 @@
                             </p>
                         </div>
                     </div>
+                    <div class="dots"></div>
                 </div>
 
         </section>
 
         <article class="sticky_container">
-                <!-- 왼쪽 이미지 영역 -->
-                <div class="sticky-image">
-                    <img src="./img/01_sticky.png" class="active" data-index="0" />
-                    <img src="./img/02_sticky.png" data-index="1" />
-                    <img src="./img/03_sticky.png" data-index="2" />
-                    <img src="./img/04_sticky.png" data-index="3" />
+            <!-- 왼쪽 이미지 영역 -->
+            <div class="sticky-image">
+                <img src="./img/01_sticky.png" class="active" data-index="0" />
+                <img src="./img/02_sticky.png" data-index="1" />
+                <img src="./img/03_sticky.png" data-index="2" />
+                <img src="./img/04_sticky.png" data-index="3" />
+            </div>
+            <div class="sticky_content_container">
+                <div class="sticky_content_section" data-index="0">
+                    <h2>
+                        레코드 컴퍼니
+                    </h2>
+                    <p class="sticky_left">
+                        <img src="./img/Calendar.png" alt="캘린더">
+                        2025년 9월 14일 (토) 오후 2시
+                        <br>
+                        <img src="./img/Location.png" alt="지도">
+                        본원 3층 마스터홀
+                        <br>
+                        <img src="./img/Reports.png" alt="지원">
+                        입시/취미/전문과정 지원지
+                        <br>
+                        <img src="./img/List.png" alt="리스트">
+                        자유곡 1곡 + 간단한 인터뷰
+                    </p>
                 </div>
-                <div class="sticky_content_container">
-                    <div class="sticky_content_section" data-index="0">
-                        <h2>
-                            레코드 컴퍼니
-                        </h2>
-                        <p class="sticky_left">
-                            <img src="./img/Calendar.png" alt="캘린더">
-                            2025년 9월 14일 (토) 오후 2시
-                            <br>
-                            <img src="./img/Location.png" alt="지도">
-                            본원 3층 마스터홀
-                            <br>
-                            <img src="./img/Reports.png" alt="지원">
-                            입시/취미/전문과정 지원지
-                            <br>
-                            <img src="./img/List.png" alt="리스트">
-                            자유곡 1곡 + 간단한 인터뷰
-                        </p>
-                    </div>
 
-                    <div class="sticky_content_section" data-index="1">
-                        <h2>
-                            레코드 컴퍼니
-                        </h2>
-                        <p class="sticky_right">
-                            2025년 9월 14일 (토) 오후 2시
-                            <img src="./img/Calendar.png" class="sticky_emoji" alt="캘린더">
-                            <br>
-                            본원 3층 마스터홀
-                            <img src="./img/Location.png" class="sticky_emoji" alt="지도">
-                            <br>
-                            입시/취미/전문과정 지원지
-                            <img src="./img/Reports.png" class="sticky_emoji" alt="지원">
-                            <br>
-                            자유곡 1곡 + 간단한 인터뷰
-                            <img src="./img/List.png" class="sticky_emoji" alt="리스트">
-                        </p>
-                    </div>
-
-                    <div class="sticky_content_section" data-index="2">
-                        <h2>
-                            레코드 컴퍼니
-                        </h2>
-                        <p class="sticky_left">
-                            <img src="./img/Calendar.png" alt="캘린더">
-                            2025년 9월 14일 (토) 오후 2시
-                            <br>
-                            <img src="./img/Location.png" alt="지도">
-                            본원 3층 마스터홀
-                            <br>
-                            <img src="./img/Reports.png" alt="지원">
-                            입시/취미/전문과정 지원지
-                            <br>
-                            <img src="./img/List.png" alt="리스트">
-                            자유곡 1곡 + 간단한 인터뷰
-                        </p>
-                    </div>
-
-                    <div class="sticky_content_section" data-index="3">
-                        <h2>
-                            레코드 컴퍼니
-                        </h2>
-                        <p class="sticky_right">
-                            2025년 9월 14일 (토) 오후 2시
-                            <img src="./img/Calendar.png" class="sticky_emoji" alt="캘린더">
-                            <br>
-                            본원 3층 마스터홀
-                            <img src="./img/Location.png" class="sticky_emoji" alt="지도">
-                            <br>
-                            입시/취미/전문과정 지원지
-                            <img src="./img/Reports.png" class="sticky_emoji" alt="지원">
-                            <br>
-                            자유곡 1곡 + 간단한 인터뷰
-                            <img src="./img/List.png" class="sticky_emoji" alt="리스트">
-                        </p>
-                    </div>
+                <div class="sticky_content_section" data-index="1">
+                    <h2>
+                        레코드 컴퍼니
+                    </h2>
+                    <p class="sticky_right">
+                        2025년 9월 14일 (토) 오후 2시
+                        <img src="./img/Calendar.png" class="sticky_emoji" alt="캘린더">
+                        <br>
+                        본원 3층 마스터홀
+                        <img src="./img/Location.png" class="sticky_emoji" alt="지도">
+                        <br>
+                        입시/취미/전문과정 지원지
+                        <img src="./img/Reports.png" class="sticky_emoji" alt="지원">
+                        <br>
+                        자유곡 1곡 + 간단한 인터뷰
+                        <img src="./img/List.png" class="sticky_emoji" alt="리스트">
+                    </p>
                 </div>
+
+                <div class="sticky_content_section" data-index="2">
+                    <h2>
+                        레코드 컴퍼니
+                    </h2>
+                    <p class="sticky_left">
+                        <img src="./img/Calendar.png" alt="캘린더">
+                        2025년 9월 14일 (토) 오후 2시
+                        <br>
+                        <img src="./img/Location.png" alt="지도">
+                        본원 3층 마스터홀
+                        <br>
+                        <img src="./img/Reports.png" alt="지원">
+                        입시/취미/전문과정 지원지
+                        <br>
+                        <img src="./img/List.png" alt="리스트">
+                        자유곡 1곡 + 간단한 인터뷰
+                    </p>
+                </div>
+
+                <div class="sticky_content_section" data-index="3">
+                    <h2>
+                        레코드 컴퍼니
+                    </h2>
+                    <p class="sticky_right">
+                        2025년 9월 14일 (토) 오후 2시
+                        <img src="./img/Calendar.png" class="sticky_emoji" alt="캘린더">
+                        <br>
+                        본원 3층 마스터홀
+                        <img src="./img/Location.png" class="sticky_emoji" alt="지도">
+                        <br>
+                        입시/취미/전문과정 지원지
+                        <img src="./img/Reports.png" class="sticky_emoji" alt="지원">
+                        <br>
+                        자유곡 1곡 + 간단한 인터뷰
+                        <img src="./img/List.png" class="sticky_emoji" alt="리스트">
+                    </p>
+                </div>
+            </div>
         </article>
 
         <section class="main_bottom">
