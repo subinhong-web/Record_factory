@@ -68,8 +68,8 @@ body {
 }
 
 .header_top > h1 > img {
-    width: 88px;
-    height: 32px;
+    width: 150px;
+    /* height: 32px; */
     cursor: pointer;
 }
 
@@ -188,7 +188,9 @@ body {
 }
 
 /* 모바일 헤더 끝 */
+
 /* 헤더 끝 */
+
 
 /* 메인 시작 */
 
@@ -218,7 +220,7 @@ body {
     font-size: 200px;
     font-weight: 600;
     color: rgba(97, 95, 95, 0.13);
-    font-family: "Abril Fatface", serif;
+    font-family: "Abhaya Libre", serif;
 }
 
 .main_top_text > h2 {
@@ -251,171 +253,9 @@ body {
 
 /* 메인 끝 */
 
-/* 캐러셀 슬라이드 시작 */
-
-.main_slide {
-    background-color: rgba(242, 233, 226, 1);
-    padding: 80px 0;
-}
-
-.slide {
-    width: 1400px;
-    margin: 0 auto 80px auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.slide > h2 {
-    color: rgba(103, 77, 62, 1);
-    font-size: 52px;
-    text-align: center;
-    padding: 80px;
-}
-
-.slide_box {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-}
-
-.slide_box > figure > img {
-    width: 500px;
-    border-radius: 12px;
-}
-
-.slide_text > h3 {
-    color: rgba(103, 77, 62, 1);
-    font-size: 28px;
-    font-family: "Noto Sans KR", sans-serif;
-    margin-bottom: 16px;
-}
-
-.slide_text > strong {
-    display: block;
-    font-size: 18px;
-    margin-top: 12px;
-    font-weight: bold;
-    color: rgba(103, 77, 62, 1);
-    font-family: "Noto Sans KR", sans-serif;
-}
-
-.slide_text > p {
-    font-size: 16px;
-    color: rgba(103, 77, 62, 1);
-    line-height: 1.6;
-    font-family: "Noto Sans KR", sans-serif;
-}
-
-.main_slide {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding: 60px 0;
-}
-
-.main_slide {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    gap: 20px;
-    padding: 0 10%;
-}
-
-.slide_box {
-    min-width: 100%;
-    background: #F2E9E2;
-    border-radius: 16px;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.slide_box.dimmed {
-    opacity: 0.5;
-    transform: scale(0.95);
-}
-
-.slide_box > figure > img {
-    width: 45%;
-    border-radius: 10px;
-}
-
-.slide_box {
-    width: 50%;
-    padding-left: 20px;
-}
-
-.slide_box > h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-.slide_box > p {
-    font-size: 0.95rem;
-    margin-bottom: 6px;
-    line-height: 1.4;
-}
-
-.main_page > button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #999;
-    z-index: 10;
-}
-
-.main_page > button:hover {
-    color: #000;
-}
-
-.dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.dot {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin: 0 6px;
-    background-color: #bbb;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.dot.active {
-    background-color: #333;
-}
-
-@media (max-width: 768px) {
-    .sound_engineer {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .slide_box > figure > img {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .slide_box {
-        width: 100%;
-        padding: 0;
-    }
-}
-
-/* 캐러셀 슬라이드 끝 */
-
 /* 오디션 스티키 시작 */
 
-/* .main_audition {
+.main_audition {
     display: flex;
     position: relative;
     height: 100vh;
@@ -464,12 +304,13 @@ body {
     line-height: 1.8;
     font-family: "Noto Sans KR", sans-serif;
     color: rgba(130, 100, 85, 1);
-} */
+}
 
 .sticky_content_section {
     color: rgba(130, 100, 85, 1);
     display: flex;
     flex-direction: column;
+    gap: 36px;
 }
 
 .sticky_content_section > h2 {
@@ -491,13 +332,13 @@ body {
 
 /* 오디션 스티키 끝 */
 
-/* 메인 하단 시작 */
+/* 하단 시작 */
 
 .main_bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 80px;
+    /* padding: 100px 80px; */
     background-color: #ffffff;
     height: 1080px;
     text-align: left;
@@ -508,14 +349,14 @@ body {
 }
 
 .main_bottom > div > h2 {
-    font-size: 32px;
+    font-size: 48px;
     font-family: "Abhaya Libre", serif;
     margin-bottom: 32px;
     color: rgba(103, 77, 62, 1);
 }
 
 .main_bottom > div > p {
-    font-size: 18px;
+    font-size: 24px;
     font-family: "Noto Sans KR", sans-serif;
     color: rgba(103, 77, 62, 1);
     margin-bottom: 24px;
@@ -538,7 +379,11 @@ body {
     height: 100vh;
 }
 
-/* 메인 하단 끝 */
+.main_last_text {
+
+}
+
+/* 하단 끝 */
 
 /* 푸터 */
 
@@ -558,7 +403,7 @@ footer > div > p {
 }
 
 footer > figure > img {
-    width: 100px;
+    width: 150px;
 }
 
 /* 푸터 끝 */

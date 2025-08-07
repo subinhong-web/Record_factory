@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/sticky.css">
     <link rel="stylesheet" href="./css/fade_in.css">
+    <link rel="stylesheet" href="./css/carousel.css">
 </head>
 
 <body>
@@ -91,7 +92,7 @@
 
     <main>
         <section class="main_page">
-            <button class="nav-button prev">&#10094;</button>
+            <!-- <button class="nav_button prev">&#10094;</button> -->
             <article class="sound_engineer">
                 <div class="main_top_text fade_content fade to_bottom">
                     <p>
@@ -212,115 +213,99 @@
                     </figure>
                 </div>
             </article>
-            <button class="nav-button prev">&#10094;</button>
         </section>
 
-        <section class="main_slide">
-            <div class="slide">
-                <h2>
-                    Studio & Equipment
-                </h2>
+        <section class="carousel_container">
+            <button class="nav_button prev">&#10094;</button>
+            <div class="carousel_track">
+                <div class="carousel_slide">
+                    <h2>
+                        Studio & Equipment
+                    </h2>
+                    <div class="carousel_text">
+                        <img src="../img/01_slide.png" alt="Studio 1" />
+                        <div class="carousel_content">
 
-                <div class="slide_box">
+                            <h3>
+                                Microphones
+                            </h3>
 
-                    <figure>
-                        <img src="./img/01_slide.png" alt="슬라이드 마이크">
-                    </figure>
+                            <strong>
+                                다이나믹 마이크
+                            </strong>
+                            <p>
+                                라이브 사운드와 큰 소리의 소스에 적합합니다.
+                            </p>
 
-                    <div class="slide_text">
-                        <h3>
-                            Microphones
-                        </h3>
+                            <strong>
+                                콘덴서 마이크
+                            </strong>
+                            <p>
+                                스튜디오 녹음, 보컬과 어쿠스틱 악기의
+                                <br>
+                                디테일을 포착하는데 이상적입니다.
+                            </p>
 
-                        <strong>
-                            다이나믹 마이크
-                        </strong>
-                        <p>
-                            라이브 사운드와 큰 소리의 소스에 적합합니다.
-                        </p>
-
-                        <strong>
-                            콘덴서 마이크
-                        </strong>
-                        <p>
-                            스튜디오 녹음, 보컬과 어쿠스틱 악기의
-                            <br>
-                            디테일을 포착하는데 이상적입니다.
-                        </p>
-
-                        <strong>
-                            리본 마이크
-                        </strong>
-                        <p>
-                            따뜻한 사운드로 유명하며,
-                            <br>
-                            현악기와 금관악기에 자주 사용됩니다.
-                        </p>
+                            <strong>
+                                리본 마이크
+                            </strong>
+                            <p>
+                                따뜻한 사운드로 유명하며,
+                                <br>
+                                현악기와 금관악기에 자주 사용됩니다.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="carousel_slide">
+                    <h2>
+                        Studio & Equipment
+                    </h2>
+                    <div class="carousel_text">
+                        <img src="../img/02_slide.png" alt="Studio 2" />
+                        <div class="carousel_content">
+                            <h3>
+                                Digital Audio Workstation (DAW),
+                                <br>
+                                Signal Processor
+                            </h3>
 
-            <div class="slide">
-                <h2>
-                    Studio & Equipment
-                </h2>
+                            <strong>
+                                DAW
+                            </strong>
+                            <p>
+                                오디오 녹음, 편집, 믹싱에 사용되는
+                                <br>
+                                소프트웨어 플렛폼
+                            </p>
 
-                <div class="slide_box">
+                            <strong>
+                                이퀄라이저
+                            </strong>
+                            <p>
+                                오디오 신호의 주파수 균형을
+                                <br>
+                                조정합니다.
+                            </p>
 
-                    <figure>
-                        <img src="./img/02_slide.png" alt="슬라이드 녹음">
-                    </figure>
-
-                    <div class="slide_text">
-                        <h3>
-                            Digital Audio Workstation (DAW),
-                            <br>
-                            Signal Processor
-                        </h3>
-
-                        <strong>
-                            DAW
-                        </strong>
-                        <p>
-                            오디오 녹음, 편집, 믹싱에 사용되는
-                            <br>
-                            소프트웨어 플렛폼
-                        </p>
-
-                        <strong>
-                            이퀄라이저
-                        </strong>
-                        <p>
-                            오디오 신호의 주파수 균형을
-                            <br>
-                            조정합니다.
-                        </p>
-
-                        <strong>
-                            컴프레서
-                        </strong>
-                        <p>
-                            다이내믹 레인지를 제어하고
-                            <br>
-                            지속음을 추가합니다.
-                        </p>
+                            <strong>
+                                컴프레서
+                            </strong>
+                            <p>
+                                다이내믹 레인지를 제어하고
+                                <br>
+                                지속음을 추가합니다.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="slide">
-                <h2>
-                    Studio & Equipment
-                </h2>
-
-                <div class="slide_box">
-
-                    <figure>
-                        <img src="./img/03_slide.png" alt="오디오 인터페이스">
-                    </figure>
-
-                    <div>
-                        <div class="slide_text">
+                <div class="carousel_slide">
+                    <h2>
+                        Studio & Equipment
+                    </h2>
+                    <div class="carousel_text">
+                        <img src="../img/03_slide.png" alt="Studio 3" />
+                        <div class="carousel_content">
                             <h3>
                                 Audio interfaces and monitors and
                                 <br>
@@ -356,19 +341,13 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="slide">
+                <div class="carousel_slide">
                     <h2>
                         Studio & Equipment
                     </h2>
-
-                    <div class="slide_box">
-
-                        <figure>
-                            <img src="./img/04_slide.png" alt="음향처리">
-                        </figure>
-
-                        <div class="slide_text">
+                    <div class="carousel_text">
+                        <img src="../img/04_slide.png" alt="Studio 4" />
+                        <div class="carousel_content">
                             <h3>
                                 Recording equipment and
                                 <br>
@@ -403,10 +382,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="dots"></div>
                 </div>
-
+            </div>
+            <button class="nav_button next">&#10095;</button>
+            <div class="dots"></div>
         </section>
+
 
         <article class="sticky_container">
             <!-- 왼쪽 이미지 영역 -->
@@ -517,7 +498,7 @@
                     문의하기 >
                 </button>
             </div>
-            <figure>
+            <figure class="qeustion_img_box">
                 <img src="./img/bottom.png" alt="레코드판 확대 사진">
             </figure>
         </section>
@@ -537,7 +518,7 @@
                 대표 홍수빈 | 사업자등록번호 132-545-23-986448
             </p>
             <p>
-                울릉도 한국로 3000길 57 | 09-5779-307835 | sususubin@recordfactor.subin
+                울릉도 동남쪽 뱃길따라 200리 | 09-5779-307835 | sususubin@recordfactor.subin
             </p>
         </div>
 
