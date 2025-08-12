@@ -108,6 +108,58 @@ body {
     font-family: "Aboreto", system-ui;
 }
 
+.main_text > div > p {
+    margin: 20px 0;
+}
+
+/* 블릿요소 */ 
+
+.sound_engineer:first-child > .main_top_text::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 1px;
+    background-color: rgba(213, 178, 167, 1);
+    display: block;
+    top: 0;
+    right: 0;
+}
+
+.sound_engineer:first-child > .main_top_text::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 180px;
+    display: block;
+    background-color: rgba(213, 178, 167, 1);
+    top: 0;
+    right: 0;
+}
+
+.sound_engineer:last-child > .main_center_box::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 1px;
+    background-color: rgba(213, 178, 167, 1);
+    display: block;
+    bottom: 0;
+    left: -80px;
+}
+
+.sound_engineer:last-child > .main_center_box::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 180px;
+    display: block;
+    background-color: rgba(213, 178, 167, 1);
+    bottom: 0;
+    left: -80px;
+}
+
+/* 블릿요소 끝 */
+
 
 /* 모바일 헤더 시작 */
 .mo_header {
@@ -237,6 +289,7 @@ body {
     align-items: center;
     gap: 200px;
     margin-top: 50px;
+    position: relative;
 }
 
 .main_top_text_2 > h3 {
@@ -317,12 +370,31 @@ body {
     font-size: 48px;
 }
 
-.sticky_left {
-    text-align: left;
+.sticky_content_section:nth-child(odd){
+    align-items: flex-start;
+}
+
+.sticky_content_section:nth-child(even){
+    align-items: flex-end;
+}
+
+.sticky_left > div {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    gap: 8px;
 }
 
 .sticky_right {
     text-align: right;
+}
+
+.sticky_right > div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 16px 0;
+    gap: 8px;
 }
 
 .sticky_content_section::before {
@@ -338,14 +410,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 100px 80px; */
     background-color: #ffffff;
-    height: 1080px;
     text-align: left;
 }
 
 .main_bottom > div {
-    max-width: 60%;
+    padding-left: 80px;
+    width: 50%;
 }
 
 .main_bottom > div > h2 {
@@ -372,6 +443,10 @@ body {
     border-radius: 24px;
     cursor: pointer;
     font-family: "Noto Sans KR", sans-serif;
+}
+
+.main_bottom > figure {
+    width: 50%;
 }
 
 .main_bottom > figure > img {
