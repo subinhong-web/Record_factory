@@ -79,7 +79,7 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    color: #999;
+    color: #585858;
     z-index: 10;
 }
 
@@ -115,22 +115,77 @@ body {
     background-color: #333;
 }
 
-@media (max-width: 768px) {
+/* 미디어 시작 */
+
+@media (max-width: 760px) {
     .carousel_slide {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carousel_container > .carousel_track > .carousel_slide > h2 {
+        font-size: 20px;
     }
 
     .carousel_slide img {
-        width: 100%;
-        margin-bottom: 15px;
+        width: 50%;
     }
 
     .carousel_content {
-        width: 100%;
+        width: 50%;
         padding: 0;
     }
+
+    .carousel_text {
+        flex-direction: column;
+    }
+
+    .carousel_text > div > h3 {
+        font-size: 18px;
+    }
+
+    .carousel_text > div > strong {
+        font-size: 16px;
+    }
+
+    .carousel_text > div > p {
+        font-size: 12px;
+    }
 }
+
+@media (max-width: 360px) {
+    .carousel_slide {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel_container > .carousel_track > .carousel_slide > h2 {
+        font-size: 16px;
+    }
+
+    .carousel_slide {
+        font-size: 12px;
+    }
+
+    .carousel_slide img {
+        width: 50%;
+    }
+
+    .carousel_content > div > h3 {
+        font-size: 10px;
+    }
+
+    .carousel_content > div > strong {
+        font-size: 10px;
+    }
+
+    .carousel_content > div > p {
+        font-size: 10px;
+    }
+}
+
+/* 미디어 끝 */
 
 /* 텍스트 */
 
@@ -146,7 +201,8 @@ body {
 
 .carousel_content > strong {
     font-weight: 900;
-    font-size: 20px;
+    font-size: 24px;
+    line-height: 24px;
 }
 
 .carousel_content > p {

@@ -1,0 +1,30 @@
+@media (max-width: 760px) {
+    .main_page > .sound_engineer > .main_top_text > p {
+        font-size: 96px;
+    }
+
+    .main_page > .sound_engineer > .main_top_text > h2 {
+        font-size: 56px;
+    }
+
+    .main_page > .sound_engineer > .main_center_box > figure > img {
+        width: 50%;
+    }
+
+    .main_center_box {
+        gap: 20px;
+        margin: 30px;
+    }
+
+    .main_center_box > .main_top_text_2 > h3 {
+        font-size: 24px;
+    }
+
+    .main_center_box > .main_top_text_2 > p {
+        font-size: 20px;
+    }
+}
+
+/* 반응형 캐러셀까지
+    메인 배경 이미지 바꾸기
+    헤더 스티키 자바스크립트 */

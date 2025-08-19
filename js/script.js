@@ -1,4 +1,5 @@
-// 스티키스크롤
+
+// 이미지 변경 스티키스크롤
 const sections = document.querySelectorAll('.sticky_content_section');
 const images = document.querySelectorAll('.sticky-image img');
 
@@ -37,23 +38,12 @@ window.addEventListener("scroll", () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+// 메인 스티키스크롤
 
 
 
 
 // 캐러셀 슬라이드
-
 const track = document.querySelector('.carousel_track');
 const slides = Array.from(track.children);
 const prevBtn = document.querySelector('.prev');
