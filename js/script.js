@@ -38,7 +38,14 @@ window.addEventListener("scroll", () => {
 
 
 
-// 메인 스티키스크롤
+
+
+// 웹 헤더 스티키
+window.addEventListener("scroll", () => {
+    const header = document.querySelector(".web_header");
+    header.classList.toggle("transparent", window.scrollY > 50);
+  });
+
 
 
 
