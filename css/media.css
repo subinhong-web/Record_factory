@@ -1,26 +1,33 @@
-
 /* 반응형 캐러셀까지
     메인 배경 이미지 바꾸기
     헤더 스티키 자바스크립트 */
 
 
 @media (max-width: 1024px) {
+
+    .sound_engineer,
+    .main_page {
+        width: 100%;
+    }
+
     .header_top {
         padding: 20px;
     }
-    .header_top > h1 > img {
+
+    .header_top>h1>img {
         width: 120px;
     }
-    .header_top > ul {
+
+    .header_top>ul {
         gap: 8px;
     }
 
 
-    .main_page > .sound_engineer > .main_top_text > p {
+    .main_page>.sound_engineer>.main_top_text>p {
         font-size: 96px;
     }
 
-    .main_page > .sound_engineer > .main_top_text > h2 {
+    .main_page>.sound_engineer>.main_top_text>h2 {
         font-size: 56px;
     }
 
@@ -29,18 +36,21 @@
         gap: 40px;
         margin: 20px;
         text-align: center;
-        justify-content: center;
     }
 
-    .main_page > .sound_engineer > .main_center_box > figure > img {
-        width: 50%;
+    .main_center_box>figure {
+        width: 300px;
     }
 
-    .main_center_box > .main_top_text_2 > h3 {
+    .main_center_box>figure>img {
+        width: 100%;
+    }
+
+    .main_center_box>.main_top_text_2>h3 {
         font-size: 24px;
     }
 
-    .main_center_box > .main_top_text_2 > p {
+    .main_center_box>.main_top_text_2>p {
         font-size: 20px;
     }
 
@@ -52,7 +62,7 @@
         gap: 20px;
     }
 
-    .carousel_container > .carousel_track > .carousel_slide > h2 {
+    .carousel_container>.carousel_track>.carousel_slide>h2 {
         font-size: 20px;
     }
 
@@ -64,16 +74,16 @@
         width: 80%;
         padding: 0;
     }
-    
-    .carousel_text > div > h3 {
+
+    .carousel_text>div>h3 {
         font-size: 18px;
     }
 
-    .carousel_text > div > strong {
+    .carousel_text>div>strong {
         font-size: 16px;
     }
 
-    .carousel_text > div > p {
+    .carousel_text>div>p {
         font-size: 14px;
     }
 
@@ -83,26 +93,26 @@
         height: auto;
     }
 
-    .main_audition > figure {
+    .main_audition>figure {
         position: relative;
         height: 50vh;
     }
 
-    .main_audition > div {
+    .main_audition>div {
         padding: 50px 20px;
         gap: 50px;
     }
 
 
-    .sticky_content_section > h2 {
+    .sticky_content_section>h2 {
         font-size: 24px;
     }
 
-    .sticky_content_section > .sticky_left > div > p {
+    .sticky_content_section>.sticky_left>div>p {
         font-size: 16px;
     }
 
-    .sticky_content_section > .sticky_right > div > p {
+    .sticky_content_section>.sticky_right>div>p {
         font-size: 16px;
     }
 
@@ -110,22 +120,22 @@
     .enquiry_section {
         text-align: center;
     }
-    
-    .enquiry_section > div > h2 {
+
+    .enquiry_section>div>h2 {
         font-size: 24px;
         line-height: 40px;
     }
 
-    .enquiry_section > div > p {
+    .enquiry_section>div>p {
         font-size: 18px;
     }
 
-    .enquiry_section > div {
+    .enquiry_section>div {
         width: 100%;
         padding: 20px;
     }
 
-    .enquiry_section > figure {
+    .enquiry_section>figure {
         width: 100%;
         height: 100vh;
     }
@@ -134,48 +144,56 @@
 
 
 @media (max-width: 760px) {
-    .header_top > ul {
-        display: none; /* 모바일 메뉴로 쇽쇽... */
+    .mo_header {
+        display: contents;
     }
 
 
     .main_text {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        padding: 0 10px;
+        text-align: center;
     }
 
     .main_text > h2 {
-        font-size: 56px;
-        padding-bottom: 40px;
+        font-size: 32px;
+        padding-bottom: 16px;
     }
 
-    .main_text > div > p {
+    .main_text>div>p {
         font-size: 20px;
     }
 
 
-    .main_page > .sound_engineer > .main_top_text > p {
+    .main_page>.sound_engineer>.main_top_text>p {
         font-size: 72px;
     }
 
-    .main_page > .sound_engineer > .main_top_text > h2 {
+    .main_page>.sound_engineer>.main_top_text>h2 {
         font-size: 42px;
     }
 
     .main_center_box {
         gap: 20px;
         margin: 10px;
+        justify-content: center;
     }
 
-    .main_center_box > .main_top_text_2 > h3 {
+    .main_center_box>.main_top_text_2>h3 {
         font-size: 20px;
     }
 
-    .main_center_box > .main_top_text_2 > p {
+    .main_center_box>.main_top_text_2>p {
         font-size: 16px;
     }
 
+    .main_top_text {
+        padding: 0 16px;
+    }
 
-    .carousel_container > .carousel_track > .carousel_slide > h2 {
+    .carousel_container>.carousel_track>.carousel_slide>h2 {
         font-size: 18px;
     }
 
@@ -187,39 +205,48 @@
         width: 90%;
     }
 
-    .carousel_text > div > h3 {
+    .carousel_text>div>h3 {
         font-size: 16px;
     }
 
-    .carousel_text > div > strong {
+    .carousel_text>div>strong {
         font-size: 14px;
     }
 
-    .carousel_text > div > p {
+    .carousel_text>div>p {
         font-size: 12px;
     }
 
 
-    .sticky_content_section > h2 {
+    .sticky_content_section>h2 {
         font-size: 24px;
     }
 
-    .sticky_content_section > .sticky_left > div > p {
+    .sticky_content_section>.sticky_left>div>p {
         font-size: 18px;
     }
 
-    .sticky_content_section > .sticky_right > div > p {
+    .sticky_content_section>.sticky_right>div>p {
         font-size: 16px;
     }
 
 
-    .enquiry_section > div > h2 {
-        font-size: 18px;
-        line-height: 20px;
+    .enquiry_section {
+        display: flex;
+        flex-direction: column;
+    }
+    .enquiry_section>div>h2 {
+        font-size:24px;
+        line-height: 30px;
     }
 
-    .enquiry_section > div > p {
+    .enquiry_section>div>p {
         font-size: 14px;
+        line-height: 30px;
+    }
+
+    .qeustion_img_box {
+        height: 50%;
     }
 
 
@@ -229,12 +256,12 @@
         gap: 20px;
     }
 
-    footer > div > p {
-        font-size: 16px;
+    footer>div>p {
+        font-size: 14px;
         line-height: 20px;
     }
 
-    footer > figure > img {
+    footer>figure>img {
         width: 100px;
     }
 }
@@ -242,14 +269,23 @@
 
 
 @media (max-width: 360px) {
-    .header_top > ul {
-        display: none; /* 모바일 메뉴로 쇽쇽... */
+    .mo_header {
+        display: contents;
     }
 
 
     .main_text {
         margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        line-height: 10px;
+    }
+
+    .main_text > div {
+        align-items: center;
     }
 
     .main_text > h2 {
@@ -259,21 +295,21 @@
     .main_text > div > p {
         font-size: 12px;
     }
-    
 
-    .main_page > .sound_engineer > .main_top_text > p {
+
+    .main_page>.sound_engineer>.main_top_text>p {
         font-size: 48px;
     }
 
-    .main_page > .sound_engineer > .main_top_text > h2 {
+    .main_page>.sound_engineer>.main_top_text>h2 {
         font-size: 28px;
     }
 
-    .main_center_box > .main_top_text_2 > h3 {
+    .main_center_box>.main_top_text_2>h3 {
         font-size: 16px;
     }
 
-    .main_center_box > .main_top_text_2 > p {
+    .main_center_box>.main_top_text_2>p {
         font-size: 14px;
     }
 
@@ -282,8 +318,8 @@
         display: flex;
         flex-direction: column;
     }
-    
-    .carousel_container > .carousel_track > .carousel_slide > h2 {
+
+    .carousel_container>.carousel_track>.carousel_slide>h2 {
         font-size: 16px;
     }
 
@@ -291,43 +327,57 @@
         width: 50%;
     }
 
-    .carousel_content > div > h3 {
+    .carousel_content>div>h3 {
         font-size: 14px;
     }
 
-    .carousel_content > div > strong {
+    .carousel_content>div>strong {
         font-size: 12px;
     }
 
-    .carousel_content > div > p {
+    .carousel_content>div>p {
         font-size: 12px;
     }
 
 
-    .sticky_content_section > h2 {
+    .sticky_container {
+        display: block;
+        align-items: center;
+    }
+
+    .sticky_content_section>h2 {
         font-size: 12px;
     }
 
-    .sticky_content_section > .sticky_left > div > p {
+    .sticky_content_section>.sticky_left>div>p {
         font-size: 10px;
     }
 
-    .sticky_content_section > .sticky_right > div > p {
+    .sticky_content_section>.sticky_right>div>p {
         font-size: 10px;
     }
 
+    .sticky_container > .sticky-image {
+        display: none;
+    }
 
-    .enquiry_section > div > h2 {
+
+    .enquiry_section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .enquiry_section>div>h2 {
         font-size: 12px;
     }
 
-    .enquiry_section > div > p {
+    .enquiry_section>div>p {
         font-size: 8px;
     }
 
-    .enquiry_section > div > button {
-        width: 20%;
-        /* 이거 버튼 사이즈 어케 바꾸지... */
+    .enquiry_section > figure > img {
+        width: 100%;
+        height: 50%;
     }
 
 
@@ -338,11 +388,11 @@
         padding: 20px;
     }
 
-    footer > div > p {
-        font-size: 12px;
+    footer>div>p {
+        font-size: 10px;
     }
 
-    footer > figure > img {
+    footer>figure>img {
         width: 100px;
     }
 }

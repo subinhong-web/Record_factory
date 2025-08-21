@@ -41,10 +41,38 @@ window.addEventListener("scroll", () => {
 
 
 // 웹 헤더 스티키
+
+const header = document.querySelector(".web_header");
+const headerMenu = document.getElementsByClassName("header_menu_a");
+let posY = 0;
+
 window.addEventListener("scroll", () => {
-    const header = document.querySelector(".web_header");
-    header.classList.toggle("transparent", window.scrollY > 50);
-  });
+    if (posY < window.scrollY) {
+        headerChange();
+    } else {
+        headerShow();
+    }
+    posY = window.scrollY;
+});
+
+function headerChange() {
+    header.classList.add("change");
+    for (let i = 0; i < headerMenu.length; i++) {
+        headerMenu[i].classList.add("list_add");
+    }
+}
+
+function headerShow() {
+    header.classList.remove("change");
+    for (let i = 0; i < headerMenu.length; i++) {
+        headerMenu[i].classList.remove("list_add");
+    }
+}
+
+// window.addEventListener("scroll", () => {
+//     const header = document.querySelector(".web_header");
+//     header.classList.toggle("transparent", window.scrollY > 100);
+//   });
 
 
 
