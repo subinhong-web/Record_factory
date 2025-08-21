@@ -1,4 +1,21 @@
-@media (max-width: 760px) {
+
+/* 반응형 캐러셀까지
+    메인 배경 이미지 바꾸기
+    헤더 스티키 자바스크립트 */
+
+
+@media (max-width: 1024px) {
+    .header_top {
+        padding: 20px;
+    }
+    .header_top > h1 > img {
+        width: 120px;
+    }
+    .header_top > ul {
+        gap: 8px;
+    }
+
+
     .main_page > .sound_engineer > .main_top_text > p {
         font-size: 96px;
     }
@@ -7,13 +24,16 @@
         font-size: 56px;
     }
 
-    .main_page > .sound_engineer > .main_center_box > figure > img {
-        width: 50%;
+    .main_center_box {
+        flex-wrap: wrap;
+        gap: 40px;
+        margin: 20px;
+        text-align: center;
+        justify-content: center;
     }
 
-    .main_center_box {
-        gap: 20px;
-        margin: 30px;
+    .main_page > .sound_engineer > .main_center_box > figure > img {
+        width: 50%;
     }
 
     .main_center_box > .main_top_text_2 > h3 {
@@ -23,8 +43,301 @@
     .main_center_box > .main_top_text_2 > p {
         font-size: 20px;
     }
+
+
+    .carousel_slide {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .carousel_container > .carousel_track > .carousel_slide > h2 {
+        font-size: 20px;
+    }
+
+    .carousel_slide img {
+        width: 70%;
+    }
+
+    .carousel_content {
+        width: 80%;
+        padding: 0;
+    }
+    
+    .carousel_text > div > h3 {
+        font-size: 18px;
+    }
+
+    .carousel_text > div > strong {
+        font-size: 16px;
+    }
+
+    .carousel_text > div > p {
+        font-size: 14px;
+    }
+
+
+    .main_audition {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .main_audition > figure {
+        position: relative;
+        height: 50vh;
+    }
+
+    .main_audition > div {
+        padding: 50px 20px;
+        gap: 50px;
+    }
+
+
+    .sticky_content_section > h2 {
+        font-size: 24px;
+    }
+
+    .sticky_content_section > .sticky_left > div > p {
+        font-size: 16px;
+    }
+
+    .sticky_content_section > .sticky_right > div > p {
+        font-size: 16px;
+    }
+
+
+    .enquiry_section {
+        text-align: center;
+    }
+    
+    .enquiry_section > div > h2 {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .enquiry_section > div > p {
+        font-size: 18px;
+    }
+
+    .enquiry_section > div {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .enquiry_section > figure {
+        width: 100%;
+        height: 100vh;
+    }
 }
 
-/* 반응형 캐러셀까지
-    메인 배경 이미지 바꾸기
-    헤더 스티키 자바스크립트 */
+
+
+@media (max-width: 760px) {
+    .header_top > ul {
+        display: none; /* 모바일 메뉴로 쇽쇽... */
+    }
+
+
+    .main_text {
+        justify-content: center;
+    }
+
+    .main_text > h2 {
+        font-size: 56px;
+        padding-bottom: 40px;
+    }
+
+    .main_text > div > p {
+        font-size: 20px;
+    }
+
+
+    .main_page > .sound_engineer > .main_top_text > p {
+        font-size: 72px;
+    }
+
+    .main_page > .sound_engineer > .main_top_text > h2 {
+        font-size: 42px;
+    }
+
+    .main_center_box {
+        gap: 20px;
+        margin: 10px;
+    }
+
+    .main_center_box > .main_top_text_2 > h3 {
+        font-size: 20px;
+    }
+
+    .main_center_box > .main_top_text_2 > p {
+        font-size: 16px;
+    }
+
+
+    .carousel_container > .carousel_track > .carousel_slide > h2 {
+        font-size: 18px;
+    }
+
+    .carousel_slide img {
+        width: 80%;
+    }
+
+    .carousel_content {
+        width: 90%;
+    }
+
+    .carousel_text > div > h3 {
+        font-size: 16px;
+    }
+
+    .carousel_text > div > strong {
+        font-size: 14px;
+    }
+
+    .carousel_text > div > p {
+        font-size: 12px;
+    }
+
+
+    .sticky_content_section > h2 {
+        font-size: 24px;
+    }
+
+    .sticky_content_section > .sticky_left > div > p {
+        font-size: 18px;
+    }
+
+    .sticky_content_section > .sticky_right > div > p {
+        font-size: 16px;
+    }
+
+
+    .enquiry_section > div > h2 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .enquiry_section > div > p {
+        font-size: 14px;
+    }
+
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    footer > div > p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    footer > figure > img {
+        width: 100px;
+    }
+}
+
+
+
+@media (max-width: 360px) {
+    .header_top > ul {
+        display: none; /* 모바일 메뉴로 쇽쇽... */
+    }
+
+    
+    .main_text {
+        margin: 0;
+        justify-content: center;
+    }
+
+    .main_text > h2 {
+        font-size: 24px;
+    }
+
+    .main_text > div > p {
+        font-size: 12px;
+    }
+    
+
+    .main_page > .sound_engineer > .main_top_text > p {
+        font-size: 48px;
+    }
+
+    .main_page > .sound_engineer > .main_top_text > h2 {
+        font-size: 28px;
+    }
+
+    .main_center_box > .main_top_text_2 > h3 {
+        font-size: 16px;
+    }
+
+    .main_center_box > .main_top_text_2 > p {
+        font-size: 14px;
+    }
+
+
+    .carousel_container > .carousel_track > .carousel_slide > h2 {
+        font-size: 16px;
+    }
+
+    .carousel_slide img {
+        width: 90%;
+    }
+
+    .carousel_content > div > h3 {
+        font-size: 14px;
+    }
+
+    .carousel_content > div > strong {
+        font-size: 12px;
+    }
+
+    .carousel_content > div > p {
+        font-size: 12px;
+    }
+
+
+    .sticky_content_section > h2 {
+        font-size: 12px;
+    }
+
+    .sticky_content_section > .sticky_left > div > p {
+        font-size: 10px;
+    }
+
+    .sticky_content_section > .sticky_right > div > p {
+        font-size: 10px;
+    }
+
+
+    .enquiry_section > div > h2 {
+        font-size: 12px;
+    }
+
+    .enquiry_section > div > p {
+        font-size: 8px;
+    }
+
+    .enquiry_section > div > button {
+        width: 20%;
+        /* 이거 버튼 사이즈 어케 바꾸지... */
+    }
+
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    footer > div > p {
+        font-size: 12px;
+    }
+
+    footer > figure > img {
+        width: 100px;
+    }
+}

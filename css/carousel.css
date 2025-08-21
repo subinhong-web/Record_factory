@@ -117,7 +117,7 @@ body {
 
 /* 미디어 시작 */
 
-@media (max-width: 760px) {
+@media (min-width: 361px) and (max-width: 1024px) {
     .carousel_slide {
         flex-direction: column;
         align-items: center;
