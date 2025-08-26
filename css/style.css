@@ -196,14 +196,21 @@ body {
 
 /* 모바일 헤더 시작 */
 .mo_header {
-    overflow: hidden;
+    display: none;
 }
+
+.mo_menu {
+    display: none;
+}
+
+
 /* 모바일 헤더 끝 */
 
 /* 헤더 끝 */
 
 
 /* 메인 시작 */
+
 
 .main_page {
     width: 1200px;

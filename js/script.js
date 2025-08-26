@@ -192,3 +192,15 @@ function resetAutoSlide() {
 }
 
 updateSlideStyles();
+
+
+const headerMenuBtn = document.querySelector(".mo_header_menu");
+const moheaderMenu = document.querySelector(".mo_menu");
+
+console.log(headerMenuBtn);
+console.log(moheaderMenu);
+
+headerMenuBtn.addEventListener('click', ()=>{
+    moheaderMenu.classList.toggle('active');
+
+});
