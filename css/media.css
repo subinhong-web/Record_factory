@@ -192,7 +192,6 @@
         transition: 0.3s;
     }
 
-    /* 메뉴 */
 
     .mo_menu {
         display: none;
@@ -361,7 +360,7 @@
         display: none;
     }
 
-    
+
     .mo_header {
         display: contents;
     }
@@ -405,7 +404,6 @@
         transition: 0.3s;
     }
 
-    /* 메뉴 */
 
     .mo_menu {
         display: none;

@@ -196,7 +196,7 @@ body {
 
 /* 모바일 헤더 시작 */
 .mo_header {
-    display: hidden;
+    overflow: hidden;
 }
 /* 모바일 헤더 끝 */
 
