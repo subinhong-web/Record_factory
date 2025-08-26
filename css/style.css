@@ -194,85 +194,10 @@ body {
 
 /* 블릿요소 끝 */
 
-
 /* 모바일 헤더 시작 */
 .mo_header {
-    display: none;
+    display: hidden;
 }
-
-@media screen and (max-width: 768px) {
-    .web_header {
-        display: none;
-    }
-
-    .mo_header {
-        display: block;
-        position: relative;
-        background-color: #0d0d0d;
-        padding: 16px;
-    }
-
-    .mo_button {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .mo_button > figure > img {
-        width: 88px;
-        height: 32px;
-    }
-
-    .mo_button > button {
-        width: 32px;
-        height: 24px;
-        background: none;
-        border: none;
-        position: relative;
-        cursor: pointer;
-    }
-
-    .mo_button > button::before,
-    .mo_button > button::after,
-    .mo_button > button > div {
-        content: "";
-        display: block;
-        background-color: rgba(11, 10, 8, 1);
-        height: 3px;
-        width: 100%;
-        margin: 5px 0;
-        transition: 0.3s;
-    }
-
-    /* 메뉴 */
-
-    .mo_menu {
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(11, 10, 8, 1);
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        z-index: 10;
-    }
-
-    .mo_menu > a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 20px;
-        padding: 16px 0;
-        font-family: "Noto Sans KR", sans-serif;
-    }
-
-    .mo_menu.active {
-        display: flex;
-    }
-}
-
 /* 모바일 헤더 끝 */
 
 /* 헤더 끝 */
