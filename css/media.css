@@ -264,13 +264,23 @@
     }
 
     .sound_engineer:last-child > .main_center_box::after {
-    bottom: 0;
+    bottom: -68px;
     left: 0;
     }
 
     .sound_engineer:last-child > .main_center_box::before {
-    bottom: 0;
+    bottom: -68px;
     left: 0;
+    }
+
+    .sound_engineer:first-child > .main_center_box::before {
+        top: -68px;
+        bottom: 0;
+    }
+
+    .sound_engineer:first-child > .main_center_box::after {
+        top: -68px;
+        bottom: 0;
     }
 
 
@@ -318,7 +328,7 @@
     }
 
     .enquiry_section>div {
-        padding: 30px;
+        padding: 50px;
     }
 
     .enquiry_section>div>h2 {
@@ -350,6 +360,8 @@
     footer>figure>img {
         width: 100px;
     }
+
+    /* 760부터 핸드폰 화면에 보일 수 있도록 수정하기. */
 }
 
 
@@ -357,7 +369,7 @@
 @media (max-width: 360px) {
 
 
-    .mo_button {
+    /* .mo_button {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -375,8 +387,8 @@
         border: none;
         position: relative;
         cursor: pointer;
-    }
-
+    } */
+/* 
     .mo_button > button::before,
     .mo_button > button::after,
     .mo_button > button > div {
@@ -387,7 +399,7 @@
         width: 100%;
         margin: 5px 0;
         transition: 0.3s;
-    }
+    } */
 
     .main_text {
         margin: 0;
@@ -412,6 +424,10 @@
     }
 
 
+    .main_page > article {
+        overflow: hidden;
+    }
+
     .main_page>.sound_engineer>.main_top_text>p {
         font-size: 48px;
     }
@@ -426,16 +442,17 @@
 
     .main_center_box>.main_top_text_2>p {
         font-size: 14px;
+        line-height: 24px;
     }
 
 
     .sound_engineer:last-child > .main_center_box::after {
-    bottom: 0;
+    bottom: -38px;
     left: 0;
     }
 
     .sound_engineer:last-child > .main_center_box::before {
-    bottom: 0;
+    bottom: -38px;
     left: 0;
     }
 
@@ -469,7 +486,7 @@
     .sticky_container {
         display: block;
         align-items: center;
-        width: 100vh;
+        position: relative;
     }
 
     .sticky_content_section>h2 {
@@ -484,8 +501,18 @@
         font-size: 10px;
     }
 
+    .sticky_content_section > .sticky_left > div > img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .sticky_content_section > .sticky_right > div > img {
+        width: 24px;
+        height: 24px;
+    }
+
     .sticky_container > .sticky-image {
-        width: 50vh;
+        width: 100%;
         height: 10vh;
     }
 
@@ -495,28 +522,35 @@
 
     .sticky_content_container {
         padding: 20px;
+        width: 100%;
     }
 
 
     .enquiry_section {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(../img/bottom.png);
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
     }
 
     .enquiry_section>div>h2 {
-        font-size: 12px;
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
     }
 
     .enquiry_section>div>p {
-        font-size: 8px;
+        font-size: 12px;
+        color: #fff;
+        word-break: keep-all;
     }
 
-    /* .enquiry_section > figure > img {
-        height: 50%;
-    } */
-
-    .qeustion_img_box {
-        height: 50%;
+    .enquiry_section > figure > img {
+        width: 0;
+        height: 0;
     }
 
 
@@ -525,6 +559,7 @@
         text-align: center;
         gap: 20px;
         padding: 20px;
+        background-color: rgba(11, 10, 8, 1);
     }
 
     footer>div>p {

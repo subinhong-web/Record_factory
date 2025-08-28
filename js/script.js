@@ -21,7 +21,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-
+// 페이드인
 const content = document.getElementsByClassName("fade_content");
 window.addEventListener("scroll", () => {
     const winH = window.innerHeight;
@@ -40,7 +40,7 @@ window.addEventListener("scroll", () => {
 
 
 
-// 웹 헤더 스티키
+// 웹 헤더 색상변경
 
 const header = document.querySelector(".web_header");
 const headerMenu = document.getElementsByClassName("header_menu_a");

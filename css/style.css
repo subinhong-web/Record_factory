@@ -148,7 +148,7 @@ body {
 
 /* 블릿요소 */ 
 
-.sound_engineer:first-child > .main_top_text::before {
+.sound_engineer:first-child > .main_center_box::before {
     content: "";
     position: absolute;
     width: 250px;
@@ -159,7 +159,7 @@ body {
     right: 0;
 }
 
-.sound_engineer:first-child > .main_top_text::after {
+.sound_engineer:first-child > .main_center_box::after {
     content: "";
     position: absolute;
     width: 1px;
@@ -298,9 +298,9 @@ body {
     transition: 0.5s;
 }
 
-.main_audition figure img.active {
+/* .main_audition figure img.active {
     opacity: 1;
-}
+} */
 
 .main_audition > div {
     display: flex;
