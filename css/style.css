@@ -73,7 +73,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 100px;
+    /* height: 100px; */
     transition: 0.3s;
     z-index: 99;
 }
@@ -108,7 +108,7 @@ body {
 
 .main_text {
     color: #fff;
-    padding-left: 80px;
+    padding: 80px;
     height: 80%;
     display: flex;
     flex-direction: column;

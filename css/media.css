@@ -1,6 +1,11 @@
 
 @media (max-width: 1024px) {
 
+    .body {
+        overflow: hidden;
+    }
+
+
     .sound_engineer,
     .main_page {
         width: 100%;
@@ -49,6 +54,31 @@
     .main_center_box>.main_top_text_2>p {
         font-size: 20px;
     }
+
+    .main_text > div > p {
+        word-break: keep-all;
+    }
+
+
+    .sound_engineer:last-child > .main_center_box::after {
+        bottom: -68px;
+        left: 0;
+        }
+    
+        .sound_engineer:last-child > .main_center_box::before {
+        bottom: -68px;
+        left: 0;
+        }
+    
+        .sound_engineer:first-child > .main_center_box::before {
+            top: -68px;
+            bottom: 0;
+        }
+    
+        .sound_engineer:first-child > .main_center_box::after {
+            top: -68px;
+            bottom: 0;
+        }
 
 
     .carousel_slide {
@@ -140,6 +170,11 @@
 
 
 @media (max-width: 760px) {
+    
+    .body {
+        overflow: hidden;
+    }
+    
     .web_header {
         display: none;
     }
@@ -151,18 +186,18 @@
         padding: 12px;
     }
 
-    .mo_button {
+    .mo_header_menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .mo_button > figure > img {
+    .mo_header_menu > figure > img {
         width: 88px;
         height: 30px;
     }
 
-    .mo_button > button > img {
+    .mo_header_menu > button > img {
         width: 24px;
         height: 24px;
         color: #fff;
@@ -171,7 +206,7 @@
         cursor: pointer;
     }
 
-    .mo_button > button {
+    .mo_header_menu > button {
         background: none;
     }
 
@@ -304,6 +339,22 @@
         font-size: 12px;
     }
 
+
+    .sticky_container {
+        display: block;
+        align-items: center;
+        position: relative;
+    }
+
+    .sticky_container > .sticky-image {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .sticky_content_container {
+        padding: 20px;
+        width: 100%;
+    }
 
     .sticky_content_section>h2 {
         font-size: 24px;
