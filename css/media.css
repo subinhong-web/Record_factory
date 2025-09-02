@@ -165,10 +165,14 @@
     .mo_button > button > img {
         width: 24px;
         height: 24px;
-        background-color: none;
+        color: #fff;
         border: none;
         position: relative;
         cursor: pointer;
+    }
+
+    .mo_button > button {
+        background: none;
     }
 
 
@@ -183,6 +187,13 @@
         width: 100%;
         height: 100vh;
         z-index: 10;
+    }
+
+    .mo_menu > a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 
     .mo_menu.active{
@@ -241,6 +252,7 @@
 
     .main_center_box>.main_top_text_2>p {
         font-size: 16px;
+        line-height: 24px;
     }
 
     .main_top_text {
@@ -306,7 +318,7 @@
     }
 
 
-    .enquiry_section {
+    /* .enquiry_section {
         display: flex;
         flex-direction: column;
     }
@@ -323,7 +335,42 @@
     .enquiry_section>div>p {
         font-size: 14px;
         line-height: 30px;
+    } */
+
+    .enquiry_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(../img/bottom.png);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
     }
+
+    .enquiry_section > div {
+        align-items: center;
+        text-align: center;
+        padding-top: 280px;
+    }
+
+    .enquiry_section > div > h2 {
+        font-size: 24px;
+        color: #fff;
+        line-height: 38px;
+    }
+
+    .enquiry_section > div > p {
+        font-size: 18px;
+        color: #fff;
+        word-break: keep-all;
+        line-height: 34px;
+    }
+
+    .enquiry_section > figure > img {
+        width: 0;
+        height: 0;
+    }
+
 
     .qeustion_img_box {
         height: 50%;
@@ -405,6 +452,7 @@
 
     .main_text > div > p {
         font-size: 12px;
+        word-break: keep-all;
     }
 
 
@@ -524,12 +572,14 @@
         font-size: 14px;
         text-align: center;
         color: #fff;
+        line-height: 1.5;
     }
 
     .enquiry_section>div>p {
         font-size: 12px;
         color: #fff;
         word-break: keep-all;
+        line-height: 24px;
     }
 
     .enquiry_section > figure > img {
